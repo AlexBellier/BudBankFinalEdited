@@ -1,0 +1,43 @@
+[debug] [2025-05-05T03:05:32.781Z] ----------------------------------------------------------------------
+[debug] [2025-05-05T03:05:32.784Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\belli\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2025-05-05T03:05:32.784Z] CLI Version:   14.2.2
+[debug] [2025-05-05T03:05:32.784Z] Platform:      win32
+[debug] [2025-05-05T03:05:32.784Z] Node Version:  v22.14.0
+[debug] [2025-05-05T03:05:32.785Z] Time:          Sun May 04 2025 21:05:32 GMT-0600 (Mountain Daylight Time)
+[debug] [2025-05-05T03:05:32.785Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-05-05T03:05:33.025Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-05T03:05:33.025Z] > authorizing via signed-in user (bellier.f.alexander@gmail.com)
+[debug] [2025-05-05T03:05:33.025Z] [iam] checking project budgetbanker-4cf1b for permissions ["firebase.projects.get"]
+[debug] [2025-05-05T03:05:33.026Z] Checked if tokens are valid: true, expires at: 1746416762172
+[debug] [2025-05-05T03:05:33.026Z] Checked if tokens are valid: true, expires at: 1746416762172
+[debug] [2025-05-05T03:05:33.027Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/budgetbanker-4cf1b:testIamPermissions [none]
+[debug] [2025-05-05T03:05:33.027Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/budgetbanker-4cf1b:testIamPermissions x-goog-quota-user=projects/budgetbanker-4cf1b
+[debug] [2025-05-05T03:05:33.027Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/budgetbanker-4cf1b:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-05-05T03:05:33.169Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/budgetbanker-4cf1b:testIamPermissions 200
+[debug] [2025-05-05T03:05:33.169Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/budgetbanker-4cf1b:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-05-05T03:05:33.169Z] Checked if tokens are valid: true, expires at: 1746416762172
+[debug] [2025-05-05T03:05:33.169Z] Checked if tokens are valid: true, expires at: 1746416762172
+[debug] [2025-05-05T03:05:33.169Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/budgetbanker-4cf1b [none]
+[debug] [2025-05-05T03:05:33.245Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/budgetbanker-4cf1b 200
+[debug] [2025-05-05T03:05:33.245Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/budgetbanker-4cf1b {"projectNumber":"602927209058","projectId":"budgetbanker-4cf1b","lifecycleState":"ACTIVE","name":"BUdgetBanker","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-05-04T20:54:33.378491Z"}
+[info] 
+[info] === Serving from 'C:\Users\belli\Documents\Academics\JavaScipt\BudBankFinal'...
+[info] 
+[debug] [2025-05-05T03:05:33.250Z] Checked if tokens are valid: true, expires at: 1746416762172
+[debug] [2025-05-05T03:05:33.250Z] Checked if tokens are valid: true, expires at: 1746416762172
+[debug] [2025-05-05T03:05:33.259Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/budgetbanker-4cf1b/sites 
+[debug] [2025-05-05T03:05:33.265Z] defaultcredentials: writing to file C:\Users\belli\AppData\Roaming\firebase\bellier_f.alexander_gmail.com_application_default_credentials.json
+[debug] [2025-05-05T03:05:33.267Z] Setting GAC to C:\Users\belli\AppData\Roaming\firebase\bellier_f.alexander_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\belli\\AppData\\Roaming\\firebase\\bellier_f.alexander_gmail.com_application_default_credentials.json"}}
+[debug] [2025-05-05T03:05:33.268Z] Checked if tokens are valid: true, expires at: 1746416762172
+[debug] [2025-05-05T03:05:33.268Z] Checked if tokens are valid: true, expires at: 1746416762172
+[debug] [2025-05-05T03:05:33.268Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/budgetbanker-4cf1b/adminSdkConfig [none]
+[debug] [2025-05-05T03:05:33.562Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/budgetbanker-4cf1b/adminSdkConfig 200
+[debug] [2025-05-05T03:05:33.562Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/budgetbanker-4cf1b/adminSdkConfig {"projectId":"budgetbanker-4cf1b","storageBucket":"budgetbanker-4cf1b.firebasestorage.app"}
+[debug] [2025-05-05T03:05:33.575Z] Error: listen EADDRINUSE: address already in use ::1:5001
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at GetAddrInfoReqWrap.callback (node:net:2203:7)
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:132:8)
+[error] 
+[error] Error: An unexpected error has occurred.
